@@ -1,0 +1,139 @@
+/*
+  CSS GLOBAL
+*/
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+h4, h5, h6 {
+  font-family: 'Poppins', serif;
+}
+
+body {
+  font-family: 'Nunito', serif;
+  background-color: #FAEBD7;
+}
+
+/*
+  CSS NAV
+*/
+
+.sidebar {
+  position: relative;
+  background-color: #fff;
+  /*----Checar----*/
+  height: 640px;
+  color: #333333;
+  transition: width 0.5s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0 0px 30px rgba(51, 51, 51, 0.1);
+  overflow-y: auto;
+}
+
+.hide-text .nav-link-text {
+  display: none;
+}
+
+.nav-item{
+  margin-top: 6px;
+  color: #333333;
+}
+
+.img-logo {
+  width: 30px;
+  height: 40px;
+}
+
+.navbar{
+  height: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0px 30px rgba(51, 51, 51, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.icon{
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.nav-link-text{
+  width: 110px;
+  font-size: 17px;
+}
+
+.nav-item div i,
+.nav-item div p,
+.nav-item div span{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sub-menu{
+  margin: 0;
+}
+
+ul.sub-menu{
+  list-style-type: none;
+}
+
+ul.sub-menu li a{
+  color: #333333;
+  text-decoration: none;
+}
+
+.sub-menu.collapsed {
+  display: none;
+}
+
+.bottom-item {
+  position:absolute;
+  bottom: 0;
+  color: red;
+}
+
+.nav-item-content {
+  display: flex;
+  align-items: center;
+  height: 42px;
+}
+
+.nav-item-content p {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item-content:hover{
+  color: #C28E5E;
+}
+ul.sub-menu li a:hover{
+  color: #C28E5E;
+}
+
+.circle-container {
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  height: 100px; /* Ajusta el tamaño según tus necesidades */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.circle-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-underline {
+  width: 150px; /* Puedes ajustar el ancho de la línea según tus necesidades */
+  height: 1px; /* Puedes ajustar el grosor de la línea según tus necesidades */
+  background-color: #ccc; /* Puedes ajustar el color de la línea según tus necesidades */
+  margin: 5px auto; /* Puedes ajustar los márgenes para controlar la posición de la línea */
+}
+
+#user-subtitle{
+  font-size: 12px;
+}

@@ -1,0 +1,71 @@
+
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  
+  h4, h5, h6 {
+    font-family: 'Poppins', serif;
+  }
+
+  body {
+    font-size: 18px;
+    font-family: 'Nunito', serif;
+  }
+  
+/* Estilos para el contenedor principal */
+ .container {
+    margin-top: 180px;
+    background-color: white;
+  }
+  
+  /* Estilos para el formulario de inicio de sesión */
+  .img-fondo{
+    width: 300px;
+    height: 300px;
+  }
+  .img-logo {
+    width: 50px;
+    height: 60px;
+  }
+  .card {
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 20px 20px rgba(51, 51, 51, 0.1); /* Definición de la sombra personalizada */
+  }
+
+  .content{
+    padding: 5px;
+  }
+
+  /* Estilos para los campos de entrada y los iconos */
+  .input-group {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px rgba(51, 51, 51, 0.1);
+    border-radius: 10px;
+  }
+  
+  .input-group-text {
+    background-color: #C28E5E;
+    border-color: #C28E5E;
+    color: #fff;
+  }
+  
+  .form-control:focus{
+    border-color:#C28E5E;
+    box-shadow: none;
+  }
+
+  /* Estilos para el botón de enviar */
+  .btn-primary {
+    border-color: #C28E5E;
+    background-color: #C28E5E;
+    width: 100%;
+    box-shadow: 0 2px 2px rgba(51, 51, 51, 0.1);
+    border-radius: 10px;
+  }
+  .btn-primary:hover {
+    border-color: #333333;
+    background-color: #333333;
+  }
+ 
