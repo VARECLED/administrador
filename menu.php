@@ -28,23 +28,28 @@
     </div>
 
     <!-- Navegación -->
-    <div class="row">
-      <nav id="nav_container" class="sidebar col-auto mx-3">
-        <ul class="nav flex-column px-1 py-4">
+    <div id="sidebar" class="row mx-2 py-4 justify-content-center">
 
-          <li class="nav-item user text-center">
-            <div class="nav-item-content justify-content-center mt-4 mb-4">
-              <div class="circle-container">
-                <img src="assets/img//user.jfif" alt="Usuario">
-              </div>
-            </div>
-            <div class="title-circle mt-5">
-              <h6 id="user-title">Usuario 1</h6>
-              <p id="user-subtitle">Administrador</p>
-            </div>
-          </li>
+      <div id="user" class="row">
+      <!-- Usuario -->
+      <div class="nav-item text-center">
+        <div class="nav-item-content justify-content-center mt-4 mb-4">
+          <div class="circle-container">
+            <img src="assets/img//user.jfif" alt="Usuario">
+          </div>
+        </div>
+        <div class="title-circle mt-5">
+          <h6 id="user-title">Usuario 1</h6>
+          <p id="user-subtitle">Administrador</p>
+        </div>
+      </div>
+      <div class="title-underline"></div>
+      </div>
 
-          <div class="title-underline"></div>
+      <div id="nav_container" class="row">
+      <!-- Contenido Navegacion -->
+      <nav class="">
+        <ul class="nav flex-column px-1">
 
           <li class="nav-item">
             <div class="nav-item-content">
@@ -110,15 +115,19 @@
               <li><a href="#">Cobro Agua</a></li>
             </ul>
           </li>
-
-          <li class="nav-item bottom-item">
-            <div class="nav-item-content">
-              <i class="bi bi-power icon" aria-level="Cerrar Sesion"></i>
-              <p class="nav-link-text">Cerrar Sesion</p>
-            </div>
-          </li>
         </ul>
       </nav>
+      </div>
+
+      <div id="session" class="row">
+      <!-- Session -->
+      <div class="nav-item bottom-item">
+        <div class="nav-item-content">
+          <i class="bi bi-power icon" aria-level="Cerrar Sesion"></i>
+          <p class="nav-link-text">Cerrar Sesion</p>
+        </div>
+      </div>
+      </div>
     </div>
 
   </div>

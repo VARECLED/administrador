@@ -4,7 +4,7 @@
 
 /*--------------------------Despliegue de menu-------------------------------------*/
 document.getElementById('toggleSidebar').addEventListener('click', function() {
-  document.getElementById('nav_container').classList.toggle('hidden');
+  document.getElementById('sidebar').classList.toggle('hidden');
 });
 /*--------------------------Despliegue de sub-menu-------------------------------------*/
 
