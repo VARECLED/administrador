@@ -1,0 +1,2 @@
+# administrador
+ plantilla para administrador
