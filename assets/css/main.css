@@ -12,7 +12,7 @@ h4, h5, h6 {
 
 body {
   font-family: 'Nunito', serif;
-  background-color: #FAEBD7;
+  background-color: #F7EBE3;
 }
 
 /*
@@ -81,7 +81,7 @@ ul.sub-menu{
   list-style-type: none;
 }
 
-ul.sub-menu li a{
+ul.sub-menu li a, ul.nav li div a{
   color: #333333;
   text-decoration: none;
 }

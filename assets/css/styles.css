@@ -1,0 +1,87 @@
+/*
+  CSS GLOBAL
+*/
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  
+  h4, h5, h6 {
+    font-family: 'Poppins', serif;
+  }
+  
+  body {
+    font-family: 'Nunito', serif;
+    background-color: #F7EBE3;
+  }
+
+/*
+  Base
+*/
+
+#base {
+  position: relative;
+  background-color: #fff;
+  /*----Checar----*/
+  width: auto;
+  height: 600px;
+  color: #333333;
+  overflow-y: auto;
+  scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
+  scrollbar-color: #333333 #F5F5F5; /* Color de la barra y el fondo de la pista */
+  border-radius: 8px;
+  box-shadow: 0 0px 30px rgba(51, 51, 51, 0.1);
+  flex-grow: 1;
+  transition: flex-grow 0.3s ease-in-out; /* Transición suave */
+}
+
+#base::-webkit-scrollbar {
+  width: 2px; /* Ancho de la barra de desplazamiento */
+}
+
+#base::-webkit-scrollbar-track {
+  background-color: #F5F5F5; /* Color de fondo de la pista */
+}
+
+#base::-webkit-scrollbar-thumb {
+  background-color: #333333; /* Color de la barra de desplazamiento */
+}
+
+#sidebar #base {
+  flex-grow: 0;
+}
+
+/*
+Card
+*/
+
+.cards {
+  display: flex;
+  margin: -4px;
+}
+
+.card-container {
+  flex: 1;
+  margin: 4px;
+  color: #333333;
+  overflow: hidden;
+}
+
+.card-container .card-img{
+  border-radius: 0 0 0 0;
+}
+
+.card-footer{
+  text-align: center;
+  height: 40px;
+  align-items: center;
+}
+
+.card-footer p{
+  width: 180px;
+}
+
+.card-footer p,
+.card-footer i{
+  display: inline-block;
+}

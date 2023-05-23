@@ -14,23 +14,24 @@
 </head>
 
 <body>
-  <div class="container-fluid">
 
-    <div class="row justify-content-center">
-      <!--Fijo navegación-->
-      <nav class="navbar col-lg-11 mx-3 my-2">
-        <div class="container-fluid">
-          <i id="toggleSidebar" class="bi bi-list"></i>
-          <a class="navbar-brand" href="#">Santiago Huajalotitlan</a>
-          <img src="assets/img/icono.png" class="img-logo">
-        </div>
-      </nav>
-    </div>
+  <div class="row justify-content-center">
+    <!--Fijo navegación-->
+    <nav class="navbar col-lg-11 mx-3 my-2">
+      <div class="container-fluid">
+        <i id="toggleSidebar" class="bi bi-list"></i>
+        <a class="navbar-brand" href="#">Santiago Huajalotitlan</a>
+        <img src="assets/img/icono.png" class="img-logo">
+      </div>
+    </nav>
+  </div>
 
-    <!-- Navegación -->
-    <div id="sidebar" class="row mx-2 py-4 justify-content-center">
+  <!-- Navegación -->
+  <div class="row">
+    <!--Contenido de la navegación!-->
+    <div id="sidebar" class="col-auto mx-2 py-4 justify-content-center">
 
-      <div id="user" class="row">
+    <div id="user" class="row">
       <!-- Usuario -->
       <div class="nav-item text-center">
         <div class="nav-item-content justify-content-center mt-4 mb-4">
@@ -44,9 +45,9 @@
         </div>
       </div>
       <div class="title-underline"></div>
-      </div>
+    </div>
 
-      <div id="nav_container" class="row">
+    <div id="nav_container" class="row">
       <!-- Contenido Navegacion -->
       <nav class="">
         <ul class="nav flex-column px-1">
@@ -54,21 +55,21 @@
           <li class="nav-item">
             <div class="nav-item-content">
               <i class="bi bi-house-door icon" title="Inicio"></i>
-              <p class="nav-link-text">Inicio</p>
+              <a class="nav-link-text">Inicio</a>
             </div>
           </li>
 
           <li class="nav-item">
             <div class="nav-item-content">
               <i class="bi bi-currency-dollar icon" title="Contribuyente"></i>
-              <p class="nav-link-text">Contribuyente</p>
+              <a class="nav-link-text" href="contribuyente.php">Contribuyente</a>
             </div>
           </li>
 
           <li class="nav-item">
             <div class="nav-item-content">
               <i class="bi bi-journal-bookmark icon" title="Padrones"></i>
-              <p class="nav-link-text textLink">Padrones</p>
+              <a class="nav-link-text textLink">Padrones</a>
               <span class="arrowIcon bi bi-chevron-right"></span>
             </div>
             <ul class="sub-menu despliegueSubMenu">
@@ -81,7 +82,7 @@
           <li class="nav-item">
             <div class="nav-item-content">
               <i class="bi bi-cash-coin icon" title="Recaudación"></i>
-              <p class="nav-link-text textLink">Recaudación</p>
+              <a class="nav-link-text textLink">Recaudación</a>
               <span class="arrowIcon bi bi-chevron-right"></span>
             </div>
             <ul class="sub-menu despliegueSubMenu">
@@ -95,7 +96,7 @@
           <li class="nav-item">
             <div class="nav-item-content">
               <i class="bi bi-receipt icon" title="Recibos"></i>
-              <p class="nav-link-text textLink">Recibos</p>
+              <a class="nav-link-text textLink">Recibos</a>
               <span class="arrowIcon bi bi-chevron-right"></span>
             </div>
             <ul class="sub-menu despliegueSubMenu">
@@ -106,7 +107,7 @@
           <li class="nav-item">
             <div class="nav-item-content">
               <i class="bi bi-file-bar-graph icon" title="Reportes"></i>
-              <p class="nav-link-text textLink">Reportes</p>
+              <a class="nav-link-text textLink">Reportes</a>
               <span class="arrowIcon bi bi-chevron-right"></span>
             </div>
             <ul class="sub-menu despliegueSubMenu">
@@ -117,9 +118,9 @@
           </li>
         </ul>
       </nav>
-      </div>
+    </div>
 
-      <div id="session" class="row">
+    <div id="session" class="row">
       <!-- Session -->
       <div class="nav-item bottom-item">
         <div class="nav-item-content">
@@ -127,10 +128,10 @@
           <p class="nav-link-text">Cerrar Sesion</p>
         </div>
       </div>
-      </div>
     </div>
-
-  </div>
+    </div>
+  
+    <!--div row no se cierra hasta que se manda a llamar a home-->
 
   <!--Archivos Js-->
   <script src="assets/js/main.js"></script>

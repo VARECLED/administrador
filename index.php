@@ -26,7 +26,7 @@
                   <img src="assets/img/logo.png" class="img-logo" alt="...">
                 </div>
                 <h3 class="card-title mb-3 text-center">Inicia Sesión</h3>
-                <form>                
+                <form action="home.php" method="post">                
                   <div class="mb-3">
                     <label for="name" class="form-label">Nombre de usuario</label>
                     <div class="input-group">
@@ -41,7 +41,7 @@
                       <input type="password" class="form-control" id="password">
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary">Acceder</button>
                 </form>
               </div>
             </div>
