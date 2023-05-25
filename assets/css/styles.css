@@ -13,6 +13,7 @@ h1, h2, h3 {
   body {
     font-family: 'Nunito', serif;
     background-color: #F7EBE3;
+    color: #333333;
   }
 
 /*
@@ -22,7 +23,7 @@ h1, h2, h3 {
 #base {
   position: relative;
   background-color: #fff;
-  /*----Checar----*/
+  /*----check----*/
   width: auto;
   height: 600px;
   color: #333333;
@@ -84,4 +85,83 @@ Card
 .card-footer p,
 .card-footer i{
   display: inline-block;
+}
+
+/*
+Tabla
+*/
+.title-table{
+  text-align: center;
+}
+
+#show-section {
+  display: flex;
+  align-items: center;
+}
+
+#show-section span,
+#show-select {
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+#option-menu{
+  display: flex;
+  align-items: center;
+}
+
+.input-group .custom-input {
+  font-size: 14px;
+  height: 35px;
+}
+
+.input-group .custom-input:focus, #show-select:focus {
+  box-shadow: none;
+  border-color: #C28E5E;
+}
+
+.input-group .custom-button {
+  font-size: 14px;
+}
+
+.input-group .input-group-text {
+  text-align: end;
+  font-size: 14px;
+  width: 80px;
+  height: 35px;
+}
+
+.foot-table{
+  font-size: 13px;
+}
+
+ul.pagination{
+  border-color: none;
+  justify-content: end;
+  margin: 0;
+}
+
+ul.pagination li a{
+  font-size: 13px;
+  color: #333333;
+}
+
+ul.pagination li a:hover, .input-group .custom-button:hover{
+  color: #fff;
+  background-color: #333333;
+  box-shadow: none;
+}
+
+button.btn-primary {
+  font-size: 13px;
+  border-color: #333333;
+  background-color: #fff;
+  color: #333333;
+  width: 80px;
+  height: 35px;
+}
+button.btn-primary:hover{
+  border-color: #333333;
+  background-color: #333333;
+  color: #fff;
 }

@@ -19,11 +19,68 @@
     <?php include("menu.php") ?>
     <!--Content -->
     <div class="col-auto mx-2 py-4" id="base">
-      <!-- Titulo de tabla -->
-      <div class="d-flex">
+      <!-- Title table -->
+      <div class="title-table">
         <h5>Listado de Contribuyentes</h5>
       </div>
-      
+      <!--- Menu Options -->
+      <div class="row my-3" id="option-menu">
+        <div class="col-lg-2 col-md-2 col-sm-2" id="show-section">
+          <span>Mostrar</span>
+          <select class="form-select" id="show-select">
+            <option selected>10</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <span>registros</span>
+        </div>
+        <div class="col-lg-7 col-md-5 col-sm-4"></div>
+        <div class="col-lg-3 col-md-5 col-sm-6">
+          <div class="input-group">
+            <input type="text" class="form-control custom-input" placeholder="Buscar...">
+            <button class="btn custom-button" type="button"><i class="bi bi-search"></i></button>
+            <button class="btn custom-button" type="button" id="filtroButton">
+              <i class="bi bi-funnel"></i>
+            </button>
+            <button class="btn btn-success custom-button" type="button"><i class="bi bi-plus-circle"></i></button>
+          </div>
+        </div>
+      </div>
+      <!--Filter-->
+      <div class="collapse" id="filtroCollapse">
+        <div class="card card-body text-center">
+          <p>Opciones de filtrado</p>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="input-group">
+                <label class="input-group-text" id="basic-addon1">Nombre</label>
+                <input type="text" class="form-control custom-input" placeholder="Username" aria-label="Nombre" aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="input-group">
+                <label class="input-group-text" for="inputGroupSelect01">Categoria</label>
+                <select class="form-select custom-input" id="inputGroupSelect01">
+                  <option selected>Escoge...</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="input-group">
+                <label class="input-group-text" for="filtroFecha">Fecha:</label>
+                <input type="date" id="filtroFecha" class="form-control custom-input">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-primary">Aplicar</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Tabla -->
       <div class="table-responsive">
         <table class="table align-middle caption-top">
@@ -48,7 +105,7 @@
               </td>
             </tr>
             <tr>
-              <th scope="row">2</th>
+              <th scope="row">1</th>
               <td>Mónica Méndez Luna</td>
               <td>MELM8305281H0</td>
               <td>Barrio Bajo Calle Pobreza</td>
@@ -58,7 +115,67 @@
               </td>
             </tr>
             <tr>
-              <th scope="row">3</th>
+              <th scope="row">1</th>
+              <td>Mónica Méndez Luna</td>
+              <td>MELM8305281H0</td>
+              <td>Barrio Bajo Calle Pobreza</td>
+              <td>
+                <i class="bi bi-pencil-square"></i>
+                <i class="bi bi-trash"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mónica Méndez Luna</td>
+              <td>MELM8305281H0</td>
+              <td>Barrio Bajo Calle Pobreza</td>
+              <td>
+                <i class="bi bi-pencil-square"></i>
+                <i class="bi bi-trash"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mónica Méndez Luna</td>
+              <td>MELM8305281H0</td>
+              <td>Barrio Bajo Calle Pobreza</td>
+              <td>
+                <i class="bi bi-pencil-square"></i>
+                <i class="bi bi-trash"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mónica Méndez Luna</td>
+              <td>MELM8305281H0</td>
+              <td>Barrio Bajo Calle Pobreza</td>
+              <td>
+                <i class="bi bi-pencil-square"></i>
+                <i class="bi bi-trash"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mónica Méndez Luna</td>
+              <td>MELM8305281H0</td>
+              <td>Barrio Bajo Calle Pobreza</td>
+              <td>
+                <i class="bi bi-pencil-square"></i>
+                <i class="bi bi-trash"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mónica Méndez Luna</td>
+              <td>MELM8305281H0</td>
+              <td>Barrio Bajo Calle Pobreza</td>
+              <td>
+                <i class="bi bi-pencil-square"></i>
+                <i class="bi bi-trash"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
               <td>Mónica Méndez Luna</td>
               <td>MELM8305281H0</td>
               <td>Barrio Bajo Calle Pobreza</td>
@@ -68,7 +185,26 @@
               </td>
             </tr>
           </tbody>
-          <tfoot></tfoot>
+          <tfoot class="foot-table">
+            <td colspan="2">1 de 1 Registro</td>
+            <td colspan="3">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true"><i class="bi bi-caret-left"></i></span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true"><i class="bi bi-caret-right"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </td>
+          </tfoot>
         </table>
       </div>
     </div>
