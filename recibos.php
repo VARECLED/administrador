@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home</title>
+  <title>Recibos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -18,10 +18,12 @@
     <!--Header-->
     <?php include("menu.php") ?>
     <!--Content -->
-    <div class="col-auto mx-2 py-4" id="base">
+    <div class="col-auto mx-2" id="base">
+      <!--Sub Menu -->
+      <?php include("submenu.php") ?>
       <!-- Title table -->
       <div class="title-table">
-        <h5>Listado de Contribuyentes</h5>
+        <h5>Recibos</h5>
       </div>
       <!--- Menu Options -->
       <div class="row my-3" id="option-menu">
@@ -86,99 +88,27 @@
         <table class="table align-middle caption-top">
           <thead class="table">
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">Nombre</th>
-              <th scope="col">R.F.C</th>
-              <th scope="col">Domicilio</th>
-              <th scope="col">Accion</th>
+              <th scope="col">Fecha Cobro</th>
+              <th scope="col">R.F.C.</th>
+              <th scope="col">Contribuyente</th>
+              <th scope="col">Cuenta</th>
+              <th scope="col">Concepto Cobro</th>
+              <th scope="col">Descuento</th>
+              <th scope="col">Recargo</th>
+              <th scope="col">Total</th>
+              <th scope="col">Acciones</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row">1</th>
-              <td>Mónica Méndez Luna</td>
-              <td>MELM8305281H0</td>
-              <td>Barrio Bajo Calle Pobreza</td>
-              <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mónica Méndez Luna</td>
-              <td>MELM8305281H0</td>
-              <td>Barrio Bajo Calle Pobreza</td>
-              <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mónica Méndez Luna</td>
-              <td>MELM8305281H0</td>
-              <td>Barrio Bajo Calle Pobreza</td>
-              <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mónica Méndez Luna</td>
-              <td>MELM8305281H0</td>
-              <td>Barrio Bajo Calle Pobreza</td>
-              <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mónica Méndez Luna</td>
-              <td>MELM8305281H0</td>
-              <td>Barrio Bajo Calle Pobreza</td>
-              <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mónica Méndez Luna</td>
-              <td>MELM8305281H0</td>
-              <td>Barrio Bajo Calle Pobreza</td>
-              <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mónica Méndez Luna</td>
-              <td>MELM8305281H0</td>
-              <td>Barrio Bajo Calle Pobreza</td>
-              <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mónica Méndez Luna</td>
-              <td>MELM8305281H0</td>
-              <td>Barrio Bajo Calle Pobreza</td>
-              <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mónica Méndez Luna</td>
-              <td>MELM8305281H0</td>
-              <td>Barrio Bajo Calle Pobreza</td>
+              <th scope="row">--</th>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
+              <td>--</td>
               <td>
                 <i class="bi bi-pencil-square"></i>
                 <i class="bi bi-trash"></i>
@@ -186,8 +116,8 @@
             </tr>
           </tbody>
           <tfoot class="foot-table">
-            <td colspan="2">1 de 1 Registro</td>
-            <td colspan="3">
+            <td colspan="4">1 de 1 Registro</td>
+            <td colspan="5">
               <ul class="pagination">
                 <li class="page-item">
                   <a class="page-link" href="#" aria-label="Previous">
@@ -208,7 +138,8 @@
         </table>
       </div>
     </div>
-    <!--Este div cierra a row de menu-->
+  </div>
+  <!--Este div cierra a row de menu-->
   </div>
 
   </div>

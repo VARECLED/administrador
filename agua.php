@@ -19,9 +19,15 @@
     <?php include("menu.php") ?>
     <!--Content -->
     <div class="col-auto mx-2" id="base">
+      <!--Sub Menu -->
+      <?php include("submenu.php") ?>
+      <!--Title Formulario-->
+      <div class="title-table">
+        <h5>Cobros por concepto de Agua</h5>
       </div>
-    <!--Este div cierra a row de menu-->
     </div>
+    <!--Este div cierra a row de menu-->
+  </div>
 
   </div>
   <!--Archivos Js-->

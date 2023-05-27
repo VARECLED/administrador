@@ -29,7 +29,7 @@
             <p class="card-text">Contribuyentes</p>
           </div>
           <div class="card-footer">
-            <p class="card-text"><small>Más Información</small></p>
+            <a href="contribuyente.php"><small>Más Información</small></a>
             <i class="bi bi-info-circle"></i>
           </div>
         </div>
@@ -41,7 +41,7 @@
             <p class="card-text">Padron Predial</p>
           </div>
           <div class="card-footer">
-            <p class="card-text"><small>Más Información</small></p>
+            <a href="predialP.php"><small>Más Información</small></a>
             <i class="bi bi-info-circle"></i>
           </div>
         </div>
@@ -53,7 +53,7 @@
             <p class="card-text">Padron de Agua</p>
           </div>
           <div class="card-footer">
-            <p class="card-text"><small>Más Información</small></p>
+            <a href="aguaP.php"><small>Más Información</small></a>
             <i class="bi bi-info-circle"></i>
           </div>
         </div>
@@ -65,7 +65,7 @@
             <p class="card-text">Padron Drenaje</p>
           </div>
           <div class="card-footer">
-            <p class="card-text"><small>Más Información</small></p>
+            <a href="drenajeP.php"><small>Más Información</small></a>
             <i class="bi bi-info-circle"></i>
           </div>
         </div>

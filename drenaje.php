@@ -18,7 +18,9 @@
     <!--Header-->
     <?php include("menu.php") ?>
     <!--Content -->
-    <div class="col-auto mx-2" id="base">
+      <div class="col-auto mx-2" id="base">
+        <!--Sub Menu -->
+        <?php include("submenu.php") ?>
       </div>
     <!--Este div cierra a row de menu-->
     </div>
