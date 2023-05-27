@@ -21,55 +21,58 @@
     <div class="col px-4" id="base">
 
       <div class="row py-4 cards">
-
-        <div class="card px-0 card-container">
-          <img src="assets/img/card.png" class="card-img">
-          <div class="card-img-overlay">
-            <h5 class="card-title">No. 1</h5>
-            <p class="card-text">Contribuyentes</p>
-          </div>
-          <div class="card-footer">
-            <a href="contribuyente.php"><small>Más Información</small></a>
-            <i class="bi bi-info-circle"></i>
-          </div>
-        </div>
-
-        <div class="card px-0 card-container">
-          <img src="assets/img/card.png" class="card-img">
-          <div class="card-img-overlay">
-            <h5 class="card-title">No. 1</h5>
-            <p class="card-text">Padron Predial</p>
-          </div>
-          <div class="card-footer">
-            <a href="predialP.php"><small>Más Información</small></a>
-            <i class="bi bi-info-circle"></i>
+        <div class="col-lg-6 col-xl-3">
+          <div class="card px-0 card-container">
+            <img src="assets/img/card.png" class="card-img">
+            <div class="card-img-overlay">
+              <h5 class="card-title">No. 1</h5>
+              <p class="card-text">Contribuyentes</p>
+            </div>
+            <div class="card-footer">
+              <a href="contribuyente.php"><small>Más Información</small></a>
+              <i class="bi bi-info-circle"></i>
+            </div>
           </div>
         </div>
-
-        <div class="card px-0 card-container">
-          <img src="assets/img/card.png" class="card-img">
-          <div class="card-img-overlay">
-            <h5 class="card-title">No. 1</h5>
-            <p class="card-text">Padron de Agua</p>
-          </div>
-          <div class="card-footer">
-            <a href="aguaP.php"><small>Más Información</small></a>
-            <i class="bi bi-info-circle"></i>
-          </div>
-        </div>
-
-        <div class="card px-0 card-container">
-          <img src="assets/img/card.png" class="card-img">
-          <div class="card-img-overlay">
-            <h5 class="card-title">No. 1</h5>
-            <p class="card-text">Padron Drenaje</p>
-          </div>
-          <div class="card-footer">
-            <a href="drenajeP.php"><small>Más Información</small></a>
-            <i class="bi bi-info-circle"></i>
+        <div class="col-lg-6 col-xl-3">
+          <div class="card px-0 card-container">
+            <img src="assets/img/card.png" class="card-img">
+            <div class="card-img-overlay">
+              <h5 class="card-title">No. 1</h5>
+              <p class="card-text">Padron Predial</p>
+            </div>
+            <div class="card-footer">
+              <a href="predialP.php"><small>Más Información</small></a>
+              <i class="bi bi-info-circle"></i>
+            </div>
           </div>
         </div>
-
+        <div class="col-lg-6 col-xl-3">
+          <div class="card px-0 card-container">
+            <img src="assets/img/card.png" class="card-img">
+            <div class="card-img-overlay">
+              <h5 class="card-title">No. 1</h5>
+              <p class="card-text">Padron de Agua</p>
+            </div>
+            <div class="card-footer">
+              <a href="aguaP.php"><small>Más Información</small></a>
+              <i class="bi bi-info-circle"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-3">
+          <div class="card px-0 card-container">
+            <img src="assets/img/card.png" class="card-img">
+            <div class="card-img-overlay">
+              <h5 class="card-title">No. 1</h5>
+              <p class="card-text">Padron Drenaje</p>
+            </div>
+            <div class="card-footer">
+              <a href="drenajeP.php"><small>Más Información</small></a>
+              <i class="bi bi-info-circle"></i>
+            </div>
+          </div>
+        </div>
       </div>
 
 

@@ -13,7 +13,6 @@ h1, h2, h3 {
   body {
     font-family: 'Nunito', serif;
     background-color: #F7EBE3;
-    color: #333333;
   }
 
 /*
@@ -25,7 +24,7 @@ h1, h2, h3 {
   background-color: #fff;
   /*----check----*/
   width: auto;
-  height: 600px;
+  min-height: 89.3vh;
   color: #333333;
   overflow-y: auto;
   scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
@@ -87,10 +86,6 @@ Card
 /*
 Tabla
 */
-.title-table{
-  text-align: center;
-}
-
 #show-section {
   display: flex;
   align-items: center;
@@ -163,6 +158,33 @@ button.btn-primary:hover{
   color: #fff;
 }
 
+i.bi-save{
+  color:darkblue;
+}
+
+i.bi-filetype-pdf{
+  color: red;
+}
+span.badge{
+  border-radius: 8px;
+  font-size: 13px;
+  text-align: center;
+  width: 80px;
+}
+
+i.bi-archive-fill{
+  color: blueviolet;
+}
+
+i.bi-pencil-square, i.bi-trash{
+  color: #333333;
+}
+
+i.bi-save, i.bi-filetype-pdf,
+i.bi-pencil-square, i.bi-trash{
+  font-size: 20px;
+  text-decoration: none;
+}
 /*
 submenu de imagenes
 */

@@ -19,7 +19,7 @@
   <div class="row">
 
     <!--Contenido de la navegación!-->
-    <div id="sidebar" class="col-auto mx-2 mt-2 py-4 justify-content-center">
+    <div id="sidebar" class="col-auto ms-2 mt-2 py-4 justify-content-center">
 
       <div id="user" class="row">
         <!-- Usuario -->
@@ -136,9 +136,6 @@
 
 
     </div>
-
-
-    <!--div row no se cierra hasta que se manda a llamar a home-->
 
     <!--Archivos Js-->
     <script src="assets/js/main.js"></script>

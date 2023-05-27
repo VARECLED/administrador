@@ -22,9 +22,11 @@
       <!--Sub Menu -->
       <?php include("submenu.php") ?>
       <!-- Title table -->
-      <div class="title-table">
-        <h5>Recibos</h5>
+      <div class="row title-table">
+        <div class="col"><h5>Recibos</h5></div>
+        <div class="col-auto"><h5><i class="bi bi-archive-fill"></i></h5></div>
       </div>
+      <hr>
       <!--- Menu Options -->
       <div class="row my-3" id="option-menu">
         <div class="col-lg-2 col-md-2 col-sm-2" id="show-section">
@@ -96,7 +98,10 @@
               <th scope="col">Descuento</th>
               <th scope="col">Recargo</th>
               <th scope="col">Total</th>
-              <th scope="col">Acciones</th>
+              <th scope="col">Estado Entrega</th>
+              <th scope="col">Respaldo</th>
+              <th scope="col">Acuse</th>
+              <th scope="col">Accion</th>
             </tr>
           </thead>
           <tbody>
@@ -109,9 +114,12 @@
               <td>--</td>
               <td>--</td>
               <td>--</td>
+              <td><span class="badge bg-info">Ausente</span></td>
+              <td><a href="#"><i class="bi bi-save"></i></a></td>
+              <td><a href="#"><i class="bi bi-filetype-pdf"></i></a></td>
               <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
+                <a href="#"><i class="bi bi-pencil-square"></i></a>
+                <a href="#"><i class="bi bi-trash"></i></a>
               </td>
             </tr>
           </tbody>

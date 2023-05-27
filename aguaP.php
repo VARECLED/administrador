@@ -22,11 +22,13 @@
       <!--Sub Menu -->
       <?php include("submenu.php") ?>
       <!-- Title table -->
-      <div class="title-table">
-        <h5>Listado de Padron de Agua</h5>
+      <div class="row title-table">
+        <div class="col"><h5>Listado de Padron de Agua</h5></div>
+        <div class="col-auto"><h5><i class="bi bi-archive-fill"></i></h5></div>
       </div>
+      <hr>
       <!--- Menu Options -->
-      <div class="row my-3" id="option-menu">
+      <div class="row my-4" id="option-menu">
         <div class="col-lg-2 col-md-2 col-sm-2" id="show-section">
           <span>Mostrar</span>
           <select class="form-select" id="show-select">
@@ -92,6 +94,9 @@
               <th scope="col">Contribuyente</th>
               <th scope="col">Clave</th>
               <th scope="col">Ubicación</th>
+              <th scope="col">Estado Entrega</th>
+              <th scope="col">Respaldo</th>
+              <th scope="col">Acuse</th>
               <th scope="col">Accion</th>
             </tr>
           </thead>
@@ -101,95 +106,70 @@
               <td>Mónica Méndez Luna</td>
               <td>MELM8305281H0</td>
               <td>Barrio Bajo Calle Pobreza</td>
+              <td><span class="badge bg-success">Entregado</span></td>
+              <td><a href="#"><i class="bi bi-save"></i></a></td>
+              <td><a href="#"><i class="bi bi-filetype-pdf"></i></a></td>
               <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
+                <a href="#"><i class="bi bi-pencil-square"></i></a>
+                <a href="#"><i class="bi bi-trash"></i></a>
               </td>
             </tr>
             <tr>
-              <th scope="row">1</th>
+              <th scope="row">2</th>
               <td>Mónica Méndez Luna</td>
               <td>MELM8305281H0</td>
               <td>Barrio Bajo Calle Pobreza</td>
+              <td><span class="badge bg-secondary">Pendiente</span></td>
+              <td><a href="#"><i class="bi bi-save"></i></a></td>
+              <td><a href="#"><i class="bi bi-filetype-pdf"></i></a></td>
               <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
+                <a href="#"><i class="bi bi-pencil-square"></i></a>
+                <a href="#"><i class="bi bi-trash"></i></a>
               </td>
             </tr>
             <tr>
-              <th scope="row">1</th>
+              <th scope="row">3</th>
               <td>Mónica Méndez Luna</td>
               <td>MELM8305281H0</td>
               <td>Barrio Bajo Calle Pobreza</td>
+              <td><span class="badge bg-danger">Devuelto</span></td>
+              <td><a href="#"><i class="bi bi-save"></i></a></td>
+              <td><a href="#"><i class="bi bi-filetype-pdf"></i></a></td>
               <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
+                <a href="#"><i class="bi bi-pencil-square"></i></a>
+                <a href="#"><i class="bi bi-trash"></i></a>
               </td>
             </tr>
             <tr>
-              <th scope="row">1</th>
+              <th scope="row">4</th>
               <td>Mónica Méndez Luna</td>
               <td>MELM8305281H0</td>
               <td>Barrio Bajo Calle Pobreza</td>
+              <td><span class="badge bg-dark">Cancelado</span></td>
+              <td><a href="#"><i class="bi bi-save"></i></a></td>
+              <td><a href="#"><i class="bi bi-filetype-pdf"></i></a></td>
               <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
+                <a href="#"><i class="bi bi-pencil-square"></i></a>
+                <a href="#"><i class="bi bi-trash"></i></a>
               </td>
             </tr>
             <tr>
-              <th scope="row">1</th>
+              <th scope="row">5</th>
               <td>Mónica Méndez Luna</td>
               <td>MELM8305281H0</td>
               <td>Barrio Bajo Calle Pobreza</td>
+              <td><span class="badge bg-info">Ausente</span></td>
+              <td><a href="#"><i class="bi bi-save"></i></a></td>
+              <td><a href="#"><i class="bi bi-filetype-pdf"></i></a></td>
               <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mónica Méndez Luna</td>
-              <td>MELM8305281H0</td>
-              <td>Barrio Bajo Calle Pobreza</td>
-              <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mónica Méndez Luna</td>
-              <td>MELM8305281H0</td>
-              <td>Barrio Bajo Calle Pobreza</td>
-              <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mónica Méndez Luna</td>
-              <td>MELM8305281H0</td>
-              <td>Barrio Bajo Calle Pobreza</td>
-              <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mónica Méndez Luna</td>
-              <td>MELM8305281H0</td>
-              <td>Barrio Bajo Calle Pobreza</td>
-              <td>
-                <i class="bi bi-pencil-square"></i>
-                <i class="bi bi-trash"></i>
+                <a href="#"><i class="bi bi-pencil-square"></i></a>
+                <a href="#"><i class="bi bi-trash"></i></a>
               </td>
             </tr>
           </tbody>
           <tfoot class="foot-table">
-            <td colspan="2">1 de 1 Registro</td>
-            <td colspan="3">
+            <td colspan="4">1 de 1 Registro</td>
+            <td colspan="4">
               <ul class="pagination">
                 <li class="page-item">
                   <a class="page-link" href="#" aria-label="Previous">

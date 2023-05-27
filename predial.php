@@ -72,97 +72,100 @@
       <div class="row mb-3 mx-2 text-center">
         <h6>DATOS DE COBRO</h6>
       </div>
-      <div class="row mb-3 mx-2">
-        <div class="col">
-          <label for="cobro" class="form-label">Concepto Cobro:</label>
-          <select class="form-select custom-input" aria-label="Default select example" id="cobro">
-            <option selected>Seleccione...</option>
-            <option value="1">Predial Urbano</option>
-            <option value="2">Predial Rustico</option>
-            <option value="3">Predial Ejidal</option>
-            <option value="4">Predial Comunal</option>
-            <option value="5">Predial Rezago</option>
-          </select>
+
+      <form action="#">
+        <div class="row mb-3 mx-2">
+          <div class="col">
+            <label for="cobro" class="form-label">Concepto Cobro:</label>
+            <select class="form-select custom-input" aria-label="Default select example" id="cobro">
+              <option selected>Seleccione...</option>
+              <option value="1">Predial Urbano</option>
+              <option value="2">Predial Rustico</option>
+              <option value="3">Predial Ejidal</option>
+              <option value="4">Predial Comunal</option>
+              <option value="5">Predial Rezago</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="aniopredial" class="form-label">Año Predial:</label>
+            <select class="form-select custom-input" aria-label="Default select example" id="aniopredial">
+              <option selected>Seleccione ...</option>
+              <option value="1">2023</option>
+              <option value="2">2022</option>
+              <option value="3">2021</option>
+              <option value="4">2020</option>
+              <option value="5">2019</option>
+            </select>
+          </div>
         </div>
-        <div class="col">
-          <label for="aniopredial" class="form-label">Año Predial:</label>
-          <select class="form-select custom-input" aria-label="Default select example" id="aniopredial">
-            <option selected>Seleccione ...</option>
-            <option value="1">2023</option>
-            <option value="2">2022</option>
-            <option value="3">2021</option>
-            <option value="4">2020</option>
-            <option value="5">2019</option>
-          </select>
+        <div class="row mb-3 mx-2 justify-content-end">
+          <div class="col-auto"><label for="importe" class="col-form-label">Importe:</label></div>
+          <div class="col-sm-3 col-5">
+            <input type="number" class="form-control custom-input" id="importe" placeholder="00000">
+          </div>
         </div>
-      </div>
-      <div class="row mb-3 mx-2 justify-content-end">
-        <div class="col-auto"><label for="importe" class="col-form-label">Importe:</label></div>
-        <div class="col-sm-3 col-5">
-          <input type="number" class="form-control custom-input" id="importe" placeholder="00000">
+        <div class="row mb-3 mx-2 justify-content-end">
+          <div class="col-auto"><label for="recargo" class="col-form-label">Recargo:</label></div>
+          <div class="col-sm-3 col-5">
+            <input type="number" class="form-control custom-input" id="recargo" placeholder="00000">
+          </div>
         </div>
-      </div>
-      <div class="row mb-3 mx-2 justify-content-end">
-        <div class="col-auto"><label for="recargo" class="col-form-label">Recargo:</label></div>
-        <div class="col-sm-3 col-5">
-          <input type="number" class="form-control custom-input" id="recargo" placeholder="00000">
+        <div class="row mb-3 mx-2 justify-content-end">
+          <div class="col-auto"><label for="descuento" class="col-form-label">Descuento:</label></div>
+          <div class="col-sm-3 col-5">
+            <input type="number" class="form-control custom-input" id="descuento" placeholder="00000">
+          </div>
         </div>
-      </div>
-      <div class="row mb-3 mx-2 justify-content-end">
-        <div class="col-auto"><label for="descuento" class="col-form-label">Descuento:</label></div>
-        <div class="col-sm-3 col-5">
-          <input type="number" class="form-control custom-input" id="descuento" placeholder="00000">
+        <div class="row mb-3 mx-2 justify-content-end">
+          <div class="col-auto">
+            <label for="total" class="col-form-label">Total: $</label>
+          </div>
+          <div class="col-sm-3 col-5">
+            <input type="text" class="form-control custom-input" id="total" placeholder="00000" readonly>
+          </div>
         </div>
-      </div>
-      <div class="row mb-3 mx-2 justify-content-end">
-        <div class="col-auto">
-          <label for="total" class="col-form-label">Total: $</label>
+        <div class="row mb-3 mx-2 justify-content-end">
+          <div class="col">
+            <label for="fpago" class="form-label">Forma de Pago:</label>
+            <select class="form-select custom-input" aria-label="Default select example" id="fpago">
+              <option selected>Seleccione...</option>
+              <option value="1">Efectivo</option>
+              <option value="2">Transferencia electrónica de fondos</option>
+              <option value="3">Cheque nominativo</option>
+              <option value="4">Tarjeta de Credito</option>
+              <option value="5">Tarjeta de Debito</option>
+              <option value="6">Por definir</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="mrecibido" class="form-label">M. Recibido:</label>
+            <input type="number" class="form-control custom-input" id="mrecibido" placeholder="00000">
+          </div>
         </div>
-        <div class="col-sm-3 col-5">
-          <input type="text" class="form-control custom-input" id="total" placeholder="00000" readonly>
+        <div class="row mb-3 mx-2 justify-content-end">
+          <div class="col-auto">
+            <label for="cambio" class="col-form-label">Cambio: $</label>
+          </div>
+          <div class="col-sm-3 col-5">
+            <input type="text" class="form-control custom-input" id="cambio" placeholder="00000" readonly step="0.01">
+          </div>
         </div>
-      </div>
-      <div class="row mb-3 mx-2 justify-content-end">
-        <div class="col">
-          <label for="fpago" class="form-label">Forma de Pago:</label>
-          <select class="form-select custom-input" aria-label="Default select example" id="fpago">
-            <option selected>Seleccione...</option>
-            <option value="1">Efectivo</option>
-            <option value="2">Transferencia electrónica de fondos</option>
-            <option value="3">Cheque nominativo</option>
-            <option value="4">Tarjeta de Credito</option>
-            <option value="5">Tarjeta de Debito</option>
-            <option value="6">Por definir</option>
-          </select>
+        <div class="row mb-3 mx-2">
+          <label for="observacion" class="form-label">Observación:</label>
+          <textarea class="form-control custom-input" id="observacion" rows="1"></textarea>
         </div>
-        <div class="col">
-          <label for="mrecibido" class="form-label">M. Recibido:</label>
-          <input type="number" class="form-control custom-input" id="mrecibido" placeholder="00000">
+        <div class="row mb-3">
+          <div class="col text-center"><button type="button" class="btn btn-success">Guardar</button></div>
+          <div class="col text-center"><button type="button" class="btn btn-danger">Cancelar</button></div>
+          <div class="col text-center"><button type="button" class="btn btn-secondary" onclick="window.location.href = 'predialP.php';">Padron Predial</button></div>
         </div>
-      </div>
-      <div class="row mb-3 mx-2 justify-content-end">
-        <div class="col-auto">
-          <label for="cambio" class="col-form-label">Cambio: $</label>
-        </div>
-        <div class="col-sm-3 col-5">
-          <input type="text" class="form-control custom-input" id="cambio" placeholder="00000" readonly step="0.01">
-        </div>
-      </div>
-      <div class="row mb-3 mx-2">
-        <label for="observacion" class="form-label">Observación:</label>
-        <textarea class="form-control custom-input" id="observacion" rows="3"></textarea>
-      </div>
-      <div class="row mb-3">
-        <div class="col text-center"><button type="button" class="btn btn-success">Guardar</button></div>
-        <div class="col text-center"><button type="button" class="btn btn-danger">Cancelar</button></div>
-        <div class="col text-center"><button type="button" class="btn btn-secondary" onclick="window.location.href = 'predialP.php';">Padron Predial</button></div>
-      </div>
+      </form>
 
     </div>
     <!--Este div cierra a row de menu-->
-    </div>
-    </div>
-    </div>
+  </div>
+  </div>
+  </div>
 
   </div>
   <!--Archivos Js-->

@@ -19,7 +19,8 @@
     <?php include("menu.php") ?>
     <!--Content -->
     <div class="col px-4" id="base">
-      </div>
+      
+    </div>
     <!--Este div cierra a row de menu-->
   </div>
     </div>
