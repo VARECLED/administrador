@@ -18,7 +18,7 @@
     <!--Header-->
     <?php include("menu.php") ?>
     <!--Content -->
-    <div class="col-auto mx-2" id="base">
+    <div class="col px-4" id="base">
       <!--Sub Menu -->
       <?php include("submenu.php") ?>
       <!--Title Formulario-->
@@ -27,6 +27,8 @@
       </div>
     </div>
     <!--Este div cierra a row de menu-->
+  </div>
+  </div>
   </div>
 
   </div>

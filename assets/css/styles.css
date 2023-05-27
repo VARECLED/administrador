@@ -32,7 +32,6 @@ h1, h2, h3 {
   scrollbar-color: #333333 #F5F5F5; /* Color de la barra y el fondo de la pista */
   border-radius: 8px;
   box-shadow: 0 0px 30px rgba(51, 51, 51, 0.1);
-  flex-grow: 1;
   transition: flex-grow 0.3s ease-in-out; /* Transición suave */
 }
 
@@ -46,10 +45,6 @@ h1, h2, h3 {
 
 #base::-webkit-scrollbar-thumb {
   background-color: #333333; /* Color de la barra de desplazamiento */
-}
-
-#sidebar #base {
-  flex-grow: 0;
 }
 
 /*
@@ -78,11 +73,13 @@ Card
   align-items: center;
 }
 
-.card-footer p{
+.card-footer a{
+  color: #333333;
+  text-decoration: none;
   width: 180px;
 }
 
-.card-footer p,
+.card-footer a,
 .card-footer i{
   display: inline-block;
 }
@@ -102,7 +99,7 @@ Tabla
 #show-section span,
 #show-select {
   font-size: 13px;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 #option-menu{
@@ -164,4 +161,54 @@ button.btn-primary:hover{
   border-color: #333333;
   background-color: #333333;
   color: #fff;
+}
+
+/*
+submenu de imagenes
+*/
+
+.img-submenu{
+  width: 40px;
+  height: 40px;
+  margin: 4px 50px 4px 50px;
+}
+
+.submenu{
+  display:flex;
+  justify-content: center;
+  width: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0px 2px rgba(51, 51, 51, 0.1);
+}
+
+.image-container {
+  transition: transform 0.3s;
+}
+
+.image-container:hover {
+  transform: scale(1.2);
+}
+
+/*
+Formularios
+*/
+
+.input-group .input-group-text{
+  color: #fff;
+  background-color: #C28E5E;
+}
+
+input.custom-input:focus, select.custom-input:focus, 
+textarea.custom-input:focus{
+  box-shadow: none;
+  border-color: #C28E5E;
+}
+
+select.custom-input option::-moz-selection {
+  background-color: #C28E5E;
+}
+
+select.custom-input option::selection {
+  background-color: #C28E5E;
 }

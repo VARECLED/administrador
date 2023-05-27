@@ -18,7 +18,7 @@
     <!--Header-->
     <?php include("menu.php") ?>
     <!--Content -->
-    <div class="col-auto mx-2 py-4" id="base">
+    <div class="col p-4" id="base">
       <!-- Title table -->
       <div class="title-table">
         <h5>Listado de Contribuyentes</h5>
@@ -209,6 +209,8 @@
       </div>
     </div>
     <!--Este div cierra a row de menu-->
+  </div>
+  </div>
   </div>
 
   </div>

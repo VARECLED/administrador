@@ -18,10 +18,12 @@
     <!--Header-->
     <?php include("menu.php") ?>
     <!--Content -->
-    <div class="col-auto mx-2" id="base">
+    <div class="col px-4" id="base">
       </div>
     <!--Este div cierra a row de menu-->
+  </div>
     </div>
+</div>
 
   </div>
   <!--Archivos Js-->

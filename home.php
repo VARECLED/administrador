@@ -18,9 +18,9 @@
     <!--Header-->
     <?php include("menu.php") ?>
     <!--Content -->
-    <div class="col mx-2 py-4" id="base">
+    <div class="col px-4" id="base">
 
-      <div class="row cards">
+      <div class="row py-4 cards">
 
         <div class="card px-0 card-container">
           <img src="assets/img/card.png" class="card-img">
@@ -75,6 +75,8 @@
 
     </div>
     <!--Este div cierra a row de menu-->
+  </div>
+  </div>
   </div>
 
   </div>

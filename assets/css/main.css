@@ -24,12 +24,12 @@ body {
   background-color: #fff;
   /*----Checar----*/
   width: 200px;
-  height: 600px;
   color: #333333;
   transition: width 0.5s ease-in-out;
   border-radius: 8px;
   box-shadow: 0 0px 30px rgba(51, 51, 51, 0.1);
 }
+
 
 .hide-text .nav-link-text {
   display: none;
