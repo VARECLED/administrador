@@ -78,7 +78,7 @@
               </div>
             </div>
             <div class="col-md-3">
-              <button type="button" class="btn btn-primary">Aplicar</button>
+              <button type="button" id="boton" class="btn btn-primary">Aplicar</button>
             </div>
           </div>
         </div>
@@ -188,6 +188,8 @@
         </table>
       </div>
     </div>
+    <!--Footer-->
+    <?php include("footer.php") ?>
     <!--Este div cierra a row de menu-->
   </div>
   </div>

@@ -22,6 +22,8 @@
         <!--Sub Menu -->
         <?php include("submenu.php") ?>
       </div>
+    <!--Footer-->
+    <?php include("footer.php") ?>
     <!--Este div cierra a row de menu-->
     </div>
     </div>

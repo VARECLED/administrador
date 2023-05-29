@@ -26,6 +26,9 @@
         <h5>Cobros por concepto de Agua</h5>
       </div>
     </div>
+
+    <!--Footer-->
+    <?php include("footer.php") ?>
     <!--Este div cierra a row de menu-->
   </div>
   </div>

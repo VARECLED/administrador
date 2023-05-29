@@ -41,7 +41,7 @@
                       <input type="password" class="form-control" id="password">
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary">Acceder</button>
+                  <button type="submit" id="boton" class="btn btn-primary">Acceder</button>
                 </form>
               </div>
             </div>

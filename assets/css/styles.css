@@ -24,7 +24,8 @@ h1, h2, h3 {
   background-color: #fff;
   /*----check----*/
   width: auto;
-  min-height: 89.3vh;
+  min-height: 80vh;
+  max-height: 80vh;
   color: #333333;
   overflow-y: auto;
   scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
@@ -233,4 +234,24 @@ select.custom-input option::-moz-selection {
 
 select.custom-input option::selection {
   background-color: #C28E5E;
+}
+
+/*
+Globales
+*/
+
+#boton:active {
+  border-color: #333333;
+  background-color: #333333;
+}
+
+#footer{
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 4px;
+  color: #333333;
+  border-radius: 8px;
+  box-shadow: 0 0px 30px rgba(51, 51, 51, 0.1);
 }

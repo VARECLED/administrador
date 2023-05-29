@@ -80,7 +80,7 @@
               </div>
             </div>
             <div class="col-md-3">
-              <button type="button" class="btn btn-primary">Aplicar</button>
+              <button type="button" id="boton" class="btn btn-primary">Aplicar</button>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@
             </tr>
           </tbody>
           <tfoot class="foot-table">
-            <td colspan="4">1 de 1 Registro</td>
+            <td colspan="7">1 de 1 Registro</td>
             <td colspan="5">
               <ul class="pagination">
                 <li class="page-item">
@@ -146,8 +146,9 @@
         </table>
       </div>
     </div>
-  </div>
-  <!--Este div cierra a row de menu-->
+  <!--Footer-->
+    <?php include("footer.php") ?>
+    <!--Este div cierra a row de menu-->
   </div>
   </div>
   </div>

@@ -69,7 +69,7 @@
     background-color: #333333;
   }
  
-  .btn-primary:focus {
+  #boton:active {
     border-color: #333333;
     background-color: #333333;
   }
