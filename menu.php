@@ -101,9 +101,9 @@
                 <span class="arrowIcon bi bi-chevron-right"></span>
               </div>
               <ul class="sub-menu despliegueSubMenu">
-                <li><a href="#">Cobro Predial</a></li>
-                <li><a href="#">Cobro Drenaje</a></li>
-                <li><a href="#">Cobro Agua</a></li>
+                <li><a href="predialC.php">Cobro Predial</a></li>
+                <li><a href="drenajeC.php">Cobro Drenaje</a></li>
+                <li><a href="aguaC.php">Cobro Agua</a></li>
               </ul>
             </li>
           </ul>

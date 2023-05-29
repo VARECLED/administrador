@@ -122,6 +122,8 @@ Tabla
   font-size: 14px;
   width: 80px;
   height: 35px;
+  color: #fff;
+  background-color: #C28E5E;
 }
 
 .foot-table{
@@ -217,7 +219,10 @@ submenu de imagenes
 Formularios
 */
 
-.input-group .input-group-text{
+.input-group .label-custom{
+  text-align: end;
+  font-size: 14px;
+  width: 120px;
   color: #fff;
   background-color: #C28E5E;
 }

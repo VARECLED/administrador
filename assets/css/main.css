@@ -160,7 +160,7 @@ ul.sub-menu li a:hover{
 
 #nav_container{
   width: 200px;
-  height: 340px;
+  height: 410px;
   overflow-y: auto;
   scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
   scrollbar-color: #333333 #F5F5F5; /* Color de la barra y el fondo de la pista */
