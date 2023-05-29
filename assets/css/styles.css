@@ -12,8 +12,175 @@ h1, h2, h3 {
   
   body {
     font-family: 'Nunito', serif;
-    background-color: #F7EBE3;
   }
+
+/*
+  CSS NAV
+*/
+
+#toggleSidebar{
+  color: #333333;
+}
+
+#toggleSidebar:hover{
+  color: #C28E5E;
+}
+
+#sidebar {
+  position: relative;
+  background-color: #fff;
+  /*----Checar----*/
+  width: 200px;
+  height: 96vh;
+  color: #333333;
+  transition: width 0.5s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0 0px 100px rgba(51, 51, 51, 0.1);
+}
+
+
+.hide-text .nav-link-text {
+  display: none;
+}
+
+.nav-item{
+  margin-top: 6px;
+  color: #333333;
+}
+
+.img-logo {
+  width: 30px;
+  height: 40px;
+}
+
+.navbar{
+  height: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0px 100px rgba(51, 51, 51, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.icon{
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.nav-link-text{
+  width: 110px;
+  font-size: 17px;
+}
+
+.nav-item div i,
+.nav-item div p,
+.nav-item div span{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sub-menu{
+  margin: 0;
+}
+
+ul.sub-menu{
+  list-style-type: none;
+}
+
+ul.sub-menu li a, ul.nav li div a{
+  color: #333333;
+  text-decoration: none;
+}
+
+.sub-menu.collapsed {
+  display: none;
+}
+
+.bottom-item {
+  position:absolute;
+  bottom: 0;
+  color: red;
+}
+
+.nav-item-content {
+  display: flex;
+  align-items: center;
+  height: 42px;
+}
+
+.nav-item-content p {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item-content:hover{
+  color: #C28E5E;
+}
+ul.sub-menu li a:hover{
+  color: #C28E5E;
+}
+
+.circle-container {
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  height: 100px; /* Ajusta el tamaño según tus necesidades */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.circle-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-underline {
+  width: 150px; /* Puedes ajustar el ancho de la línea según tus necesidades */
+  height: 1px; /* Puedes ajustar el grosor de la línea según tus necesidades */
+  background-color: #ccc; /* Puedes ajustar el color de la línea según tus necesidades */
+  margin: 5px auto; /* Puedes ajustar los márgenes para controlar la posición de la línea */
+}
+
+#user-subtitle{
+  font-size: 12px;
+}
+
+/* Asignacion tamaño */
+#user{
+  width: 200px;
+  height: 190px;
+}
+
+#session{
+  width: 200px;
+  height: 90px;
+}
+
+#nav_container{
+  width: 200px;
+  height: 410px;
+  overflow-y: auto;
+  scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
+  scrollbar-color: #333333 #F5F5F5; /* Color de la barra y el fondo de la pista */
+}
+
+
+#nav_container::-webkit-scrollbar {
+  width: 2px; /* Ancho de la barra de desplazamiento */
+}
+
+#nav_container::-webkit-scrollbar-track {
+  background-color: #F5F5F5; /* Color de fondo de la pista */
+}
+
+#nav_container::-webkit-scrollbar-thumb {
+  background-color: #333333; /* Color de la barra de desplazamiento */
+}
+
+
+
+
 
 /*
   Base
@@ -31,7 +198,7 @@ h1, h2, h3 {
   scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
   scrollbar-color: #333333 #F5F5F5; /* Color de la barra y el fondo de la pista */
   border-radius: 8px;
-  box-shadow: 0 0px 30px rgba(51, 51, 51, 0.1);
+  box-shadow: 0 0px 100px rgba(51, 51, 51, 0.1);
   transition: flex-grow 0.3s ease-in-out; /* Transición suave */
 }
 
@@ -252,11 +419,43 @@ Globales
 
 #footer{
   position: relative;
+  height: 45px;
   background-color: #fff;
   text-align: center;
   font-size: 13px;
   padding-top: 4px;
   color: #333333;
   border-radius: 8px;
-  box-shadow: 0 0px 30px rgba(51, 51, 51, 0.1);
+  box-shadow: 0 0px 100px rgba(51, 51, 51, 0.1);
+  align-items: center;
+}
+
+
+/*
+Cambio de modo
+*/
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+  background-color:#333333;
+  color: #fff;
+}
+
+/* Estilos para el modo claro */
+body.light-mode {
+  background-color: #ffffff;
+  color: #333;
+}
+
+#btnChange{
+  border-color: none;
+  background-color: none;
+  width: auto;
+  height: auto;
+}
+#btnChange:hover{
+  background-color: #fff;
+}
+#modeIcon{
+  color: #333;
 }
