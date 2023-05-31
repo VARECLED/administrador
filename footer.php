@@ -13,11 +13,6 @@
           <br>G6 - CORPORATIVO
         </p>
       </div>
-      <div class="col-auto alig-items-end">
-        <button id="btnChange" class="btn" onclick="toggleMode()">
-          <i id="modeIcon" class="bi bi-brightness-high-fill"></i><!-- Icono del modo claro (inicialmente) -->
-        </button>
-      </div>
     </div>
   </div>
 

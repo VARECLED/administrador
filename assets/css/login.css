@@ -31,45 +31,55 @@
   .card {
     max-width: 700px;
     margin: auto;
-    box-shadow: 0 20px 20px rgba(51, 51, 51, 0.1); /* Definición de la sombra personalizada */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Definición de la sombra personalizada */
   }
 
   .content{
     padding: 5px;
   }
 
+  .card-title, .form-label{
+    color: #2A2F3D;
+  }
+
   /* Estilos para los campos de entrada y los iconos */
   .input-group {
     margin-bottom: 20px;
-    box-shadow: 0 2px 2px rgba(51, 51, 51, 0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
   }
   
   .input-group-text {
-    background-color: #C28E5E;
-    border-color: #C28E5E;
+    background-color: #5D87FF;
+    border-color: #5D87FF;
     color: #fff;
+  }
+
+  input.form-control{
+    color: #2A2F3D;
   }
   
   .form-control:focus{
-    border-color:#C28E5E;
+    border-color:#5D87FF;
     box-shadow: none;
   }
 
   /* Estilos para el botón de enviar */
   .btn-primary {
-    border-color: #C28E5E;
-    background-color: #C28E5E;
+    border-color: #5D87FF;
+    background-color: #5D87FF;
     width: 100%;
-    box-shadow: 0 2px 2px rgba(51, 51, 51, 0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
   }
   .btn-primary:hover {
-    border-color: #333333;
-    background-color: #333333;
+    border-color: #ffff;
+    background-color: #ffff;
+    color: #5D87FF;
   }
  
   #boton:active {
-    border-color: #333333;
-    background-color: #333333;
+    border-color: #ffff;
+    background-color: #ffff;
+    color: #5D87FF;
   }

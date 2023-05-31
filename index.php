@@ -18,7 +18,7 @@
         <div class="card mb-3 col-lg-8">
           <div class="row content align-items-center">
             <div class="content col-md-6 text-center">
-              <img src="assets/img/fondo.jpg" class="img-fondo" alt="...">
+              <img src="assets/img/fondo.png" class="img-fondo" alt="...">
             </div> 
             <div class="content col-md-6">
               <div class="card-body">

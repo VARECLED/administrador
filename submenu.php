@@ -11,7 +11,7 @@
         <img class="img-submenu" src="assets/img/predial.png" title="Cobro de Predial">
       </div>
       <div class="image-container">
-        <img class="img-submenu" src="assets/img/agua.jpeg" title="Cobro de Agua Potable">
+        <img class="img-submenu" src="assets/img/agua.png" title="Cobro de Agua Potable">
       </div>
       <div class="image-container">
         <img class="img-submenu" src="assets/img/drenaje.png" title="Cobro de Uso de Drenaje">

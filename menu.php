@@ -18,7 +18,7 @@
   <div class="row">
 
     <!--Contenido de la navegación!-->
-    <div id="sidebar" class="col-auto ms-2 mt-2 py-4 justify-content-center">
+    <div id="sidebar" class="col-auto ms-2 mt-2 py-4">
 
       <div id="user" class="row">
         <!-- Usuario -->
@@ -43,23 +43,29 @@
 
             <li class="nav-item">
               <div class="nav-item-content">
-                <i class="bi bi-house-door icon" title="Inicio"></i>
-                <a class="nav-link-text" href="home.php">Inicio</a>
+                <a class="nav-link-text" href="home.php">
+                  <i class="bi bi-house-door icon" title="Inicio"></i>
+                  <p>Inicio</p>
+                </a>
               </div>
             </li>
 
             <li class="nav-item">
               <div class="nav-item-content">
-                <i class="bi bi-currency-dollar icon" title="Contribuyente"></i>
-                <a class="nav-link-text" href="contribuyente.php">Contribuyente</a>
+                <a class="nav-link-text" href="contribuyente.php">
+                  <i class="bi bi-currency-dollar icon" title="Contribuyente"></i>
+                  <p>Contribuyente</p>
+                </a>
               </div>
             </li>
 
             <li class="nav-item">
               <div class="nav-item-content">
-                <i class="bi bi-journal-bookmark icon" title="Padrones"></i>
-                <a class="nav-link-text textLink">Padrones</a>
-                <span class="arrowIcon bi bi-chevron-right"></span>
+                <a class="nav-link-text ">
+                  <i class="bi bi-journal-bookmark icon" title="Padrones"></i>
+                  <p>Padrones</p>
+                  <span class="arrowIcon bi bi-chevron-right"></span>
+                </a>
               </div>
               <ul class="sub-menu despliegueSubMenu">
                 <li><a href="predialP.php">Predial</a></li>
@@ -70,9 +76,11 @@
 
             <li class="nav-item">
               <div class="nav-item-content">
-                <i class="bi bi-cash-coin icon" title="Recaudación"></i>
-                <a class="nav-link-text textLink">Recaudación</a>
-                <span class="arrowIcon bi bi-chevron-right"></span>
+                <a class="nav-link-text ">
+                  <i class="bi bi-cash-coin icon" title="Recaudación"></i>
+                  <p>Recaudación</p>
+                  <span class="arrowIcon bi bi-chevron-right"></span>
+                </a>
               </div>
               <ul class="sub-menu despliegueSubMenu">
                 <li><a href="predial.php">Predial</a></li>
@@ -84,10 +92,13 @@
 
             <li class="nav-item">
               <div class="nav-item-content">
-                <i class="bi bi-receipt icon" title="Recibos"></i>
-                <a class="nav-link-text textLink">Recibos</a>
-                <span class="arrowIcon bi bi-chevron-right"></span>
+                <a class="nav-link-text ">
+                  <i class="bi bi-receipt icon" title="Recibos"></i>
+                  <p>Recibos</p>
+                  <span class="arrowIcon bi bi-chevron-right"></span>
+                </a>
               </div>
+
               <ul class="sub-menu despliegueSubMenu">
                 <li><a href="recibos.php">Listado</a></li>
               </ul>
@@ -95,9 +106,11 @@
 
             <li class="nav-item">
               <div class="nav-item-content">
-                <i class="bi bi-file-bar-graph icon" title="Reportes"></i>
-                <a class="nav-link-text textLink">Reportes</a>
-                <span class="arrowIcon bi bi-chevron-right"></span>
+                <a class="nav-link-text">
+                  <i class="bi bi-file-bar-graph icon" title="Reportes"></i>
+                  <p>Reportes</p>
+                  <span class="arrowIcon bi bi-chevron-right"></span>
+                </a>
               </div>
               <ul class="sub-menu despliegueSubMenu">
                 <li><a href="predialC.php">Cobro Predial</a></li>
@@ -111,10 +124,12 @@
 
       <div id="session" class="row">
         <!-- Session -->
-        <div class="nav-item bottom-item">
+        <div class="nav-item" id="cerrar">
           <div class="nav-item-content">
-            <i class="bi bi-power icon" aria-level="Cerrar Sesion"></i>
-            <p class="nav-link-text">Cerrar Sesion</p>
+            <a class="nav-link-text" href="index.php">
+              <i class="bi bi-power icon" aria-level="Cerrar Sesion"></i>
+              <p>Cerrar Sesion</p>
+            </a>
           </div>
         </div>
       </div>
@@ -127,7 +142,7 @@
           <nav class="navbar my-2">
             <div class="container-fluid">
               <i id="toggleSidebar" class="bi bi-list"></i>
-              <a class="navbar-brand" href="#">Santiago Huajalotitlan</a>
+              <a id="titPrin" class="navbar-brand" href="#">Santiago Huajalotitlan</a>
               <img src="assets/img/icono.png" class="img-logo">
             </div>
           </nav>

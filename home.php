@@ -25,8 +25,8 @@
           <div class="card px-0 card-container">
             <img src="assets/img/card.png" class="card-img">
             <div class="card-img-overlay">
-              <h5 class="card-title">No. 1</h5>
-              <p class="card-text">Contribuyentes</p>
+              <h5 class="card-title num">No. 1</h5>
+              <p class="card-text cont">Contribuyentes</p>
             </div>
             <div class="card-footer">
               <a href="contribuyente.php"><small>Más Información</small></a>
@@ -38,8 +38,8 @@
           <div class="card px-0 card-container">
             <img src="assets/img/card.png" class="card-img">
             <div class="card-img-overlay">
-              <h5 class="card-title">No. 1</h5>
-              <p class="card-text">Padron Predial</p>
+              <h5 class="card-title num">No. 1</h5>
+              <p class="card-text cont">Padron Predial</p>
             </div>
             <div class="card-footer">
               <a href="predialP.php"><small>Más Información</small></a>
@@ -51,8 +51,8 @@
           <div class="card px-0 card-container">
             <img src="assets/img/card.png" class="card-img">
             <div class="card-img-overlay">
-              <h5 class="card-title">No. 1</h5>
-              <p class="card-text">Padron de Agua</p>
+              <h5 class="card-title num">No. 1</h5>
+              <p class="card-text cont">Padron de Agua</p>
             </div>
             <div class="card-footer">
               <a href="aguaP.php"><small>Más Información</small></a>
@@ -64,8 +64,8 @@
           <div class="card px-0 card-container">
             <img src="assets/img/card.png" class="card-img">
             <div class="card-img-overlay">
-              <h5 class="card-title">No. 1</h5>
-              <p class="card-text">Padron Drenaje</p>
+              <h5 class="card-title num">No. 1</h5>
+              <p class="card-text cont">Padron Drenaje</p>
             </div>
             <div class="card-footer">
               <a href="drenajeP.php"><small>Más Información</small></a>

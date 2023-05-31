@@ -18,24 +18,15 @@ h1, h2, h3 {
   CSS NAV
 */
 
-#toggleSidebar{
-  color: #333333;
-}
-
-#toggleSidebar:hover{
-  color: #C28E5E;
-}
 
 #sidebar {
   position: relative;
-  background-color: #fff;
   /*----Checar----*/
   width: 200px;
   height: 96vh;
-  color: #333333;
   transition: width 0.5s ease-in-out;
   border-radius: 8px;
-  box-shadow: 0 0px 100px rgba(51, 51, 51, 0.1);
+  align-items: center;
 }
 
 
@@ -45,7 +36,6 @@ h1, h2, h3 {
 
 .nav-item{
   margin-top: 6px;
-  color: #333333;
 }
 
 .img-logo {
@@ -54,10 +44,9 @@ h1, h2, h3 {
 }
 
 .navbar{
+  position: relative;
   height: auto;
-  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 0px 100px rgba(51, 51, 51, 0.1);
 }
 
 .hidden {
@@ -66,17 +55,19 @@ h1, h2, h3 {
 
 .icon{
   margin-right: 10px;
-  font-size: 16px;
 }
 
 .nav-link-text{
-  width: 110px;
   font-size: 17px;
 }
 
-.nav-item div i,
-.nav-item div p,
-.nav-item div span{
+.nav-item div a p{
+  width: 110px;
+}
+
+.nav-item div a i,
+.nav-item div a p,
+.nav-item div a span{
   display: inline-block;
   vertical-align: middle;
 }
@@ -89,8 +80,8 @@ ul.sub-menu{
   list-style-type: none;
 }
 
-ul.sub-menu li a, ul.nav li div a{
-  color: #333333;
+ul.sub-menu li a, ul.nav li div a, 
+#cerrar div.nav-item-content a{
   text-decoration: none;
 }
 
@@ -98,9 +89,13 @@ ul.sub-menu li a, ul.nav li div a{
   display: none;
 }
 
-.bottom-item {
+#cerrar {
   position:absolute;
   bottom: 0;
+}
+
+#cerrar div.nav-item-content a{
+  text-align: center;
   color: red;
 }
 
@@ -113,13 +108,6 @@ ul.sub-menu li a, ul.nav li div a{
 .nav-item-content p {
   margin: 0;
   padding: 0;
-}
-
-.nav-item-content:hover{
-  color: #C28E5E;
-}
-ul.sub-menu li a:hover{
-  color: #C28E5E;
 }
 
 .circle-container {
@@ -138,7 +126,6 @@ ul.sub-menu li a:hover{
 .title-underline {
   width: 150px; /* Puedes ajustar el ancho de la línea según tus necesidades */
   height: 1px; /* Puedes ajustar el grosor de la línea según tus necesidades */
-  background-color: #ccc; /* Puedes ajustar el color de la línea según tus necesidades */
   margin: 5px auto; /* Puedes ajustar los márgenes para controlar la posición de la línea */
 }
 
@@ -162,25 +149,11 @@ ul.sub-menu li a:hover{
   height: 410px;
   overflow-y: auto;
   scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
-  scrollbar-color: #333333 #F5F5F5; /* Color de la barra y el fondo de la pista */
 }
-
 
 #nav_container::-webkit-scrollbar {
   width: 2px; /* Ancho de la barra de desplazamiento */
 }
-
-#nav_container::-webkit-scrollbar-track {
-  background-color: #F5F5F5; /* Color de fondo de la pista */
-}
-
-#nav_container::-webkit-scrollbar-thumb {
-  background-color: #333333; /* Color de la barra de desplazamiento */
-}
-
-
-
-
 
 /*
   Base
@@ -188,30 +161,18 @@ ul.sub-menu li a:hover{
 
 #base {
   position: relative;
-  background-color: #fff;
   /*----check----*/
   width: auto;
   min-height: 80vh;
   max-height: 80vh;
-  color: #333333;
   overflow-y: auto;
   scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
-  scrollbar-color: #333333 #F5F5F5; /* Color de la barra y el fondo de la pista */
   border-radius: 8px;
-  box-shadow: 0 0px 100px rgba(51, 51, 51, 0.1);
   transition: flex-grow 0.3s ease-in-out; /* Transición suave */
 }
 
 #base::-webkit-scrollbar {
   width: 2px; /* Ancho de la barra de desplazamiento */
-}
-
-#base::-webkit-scrollbar-track {
-  background-color: #F5F5F5; /* Color de fondo de la pista */
-}
-
-#base::-webkit-scrollbar-thumb {
-  background-color: #333333; /* Color de la barra de desplazamiento */
 }
 
 /*
@@ -226,7 +187,6 @@ Card
 .card-container {
   flex: 1;
   margin: 4px;
-  color: #333333;
   overflow: hidden;
 }
 
@@ -241,7 +201,6 @@ Card
 }
 
 .card-footer a{
-  color: #333333;
   text-decoration: none;
   width: 180px;
 }
@@ -277,7 +236,6 @@ Tabla
 
 .input-group .custom-input:focus, #show-select:focus {
   box-shadow: none;
-  border-color: #C28E5E;
 }
 
 .input-group .custom-button {
@@ -289,8 +247,6 @@ Tabla
   font-size: 14px;
   width: 80px;
   height: 35px;
-  color: #fff;
-  background-color: #C28E5E;
 }
 
 .foot-table{
@@ -305,27 +261,15 @@ ul.pagination{
 
 ul.pagination li a{
   font-size: 13px;
-  color: #333333;
 }
 
 ul.pagination li a:hover, .input-group .custom-button:hover{
-  color: #fff;
-  background-color: #333333;
   box-shadow: none;
 }
 
 button.btn-primary {
-  font-size: 13px;
-  border-color: #333333;
-  background-color: #fff;
-  color: #333333;
   width: 80px;
   height: 35px;
-}
-button.btn-primary:hover{
-  border-color: #333333;
-  background-color: #333333;
-  color: #fff;
 }
 
 i.bi-save{
@@ -335,6 +279,7 @@ i.bi-save{
 i.bi-filetype-pdf{
   color: red;
 }
+
 span.badge{
   border-radius: 8px;
   font-size: 13px;
@@ -344,10 +289,6 @@ span.badge{
 
 i.bi-archive-fill{
   color: blueviolet;
-}
-
-i.bi-pencil-square, i.bi-trash{
-  color: #333333;
 }
 
 i.bi-save, i.bi-filetype-pdf,
@@ -371,7 +312,6 @@ submenu de imagenes
   width: auto;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  box-shadow: 0 0px 2px rgba(51, 51, 51, 0.1);
 }
 
 .image-container {
@@ -390,43 +330,24 @@ Formularios
   text-align: end;
   font-size: 14px;
   width: 120px;
-  color: #fff;
-  background-color: #C28E5E;
 }
 
 input.custom-input:focus, select.custom-input:focus, 
 textarea.custom-input:focus{
   box-shadow: none;
-  border-color: #C28E5E;
-}
-
-select.custom-input option::-moz-selection {
-  background-color: #C28E5E;
-}
-
-select.custom-input option::selection {
-  background-color: #C28E5E;
 }
 
 /*
-Globales
+Footer
 */
-
-#boton:active {
-  border-color: #333333;
-  background-color: #333333;
-}
 
 #footer{
   position: relative;
-  height: 45px;
-  background-color: #fff;
+  height: 43px;
   text-align: center;
   font-size: 13px;
   padding-top: 4px;
-  color: #333333;
   border-radius: 8px;
-  box-shadow: 0 0px 100px rgba(51, 51, 51, 0.1);
   align-items: center;
 }
 
@@ -435,27 +356,191 @@ Globales
 Cambio de modo
 */
 
-/* Estilos para el modo oscuro */
-body.dark-mode {
-  background-color:#333333;
+/* -----------------------Estilos para el modo claro------------------ */
+body {
+  background-color: #fff;
+  color: #2A2F3D;
+}
+
+/*Navegación*/
+ #toggleSidebar{
+  color: #2A2F3D;
+  font-size: 20px;
+}
+
+ #toggleSidebar:hover{
+  color: #5D87FF;
+}
+
+ #titPrin{
+  color: #2A2F3D;
+}
+
+ #sidebar {
+  background-color: #fff;
+  color: #2A2F3D;
+  box-shadow: 0 0px 20px rgba(42, 47, 61, 0.1);
+}
+
+ .nav-item{
+  color: #2A2F3D;
+}
+
+ .navbar{
+  background-color: #fff;
+  box-shadow: 0 0px 20px rgba(42, 47, 61, 0.1);
+}
+
+ ul.sub-menu li a, ul.nav li div a{
+  color: #2A2F3D;
+}
+
+ .nav-item-content:hover,
+ ul.sub-menu li a:hover, 
+ ul.nav li div a:hover{
+  color: #5D87FF;
+}
+
+ ul.sub-menu li a:hover{
+  color: #5D87FF;
+}
+
+ .title-underline {
+  background-color: #fff; /* Puedes ajustar el color de la línea según tus necesidades */
+}
+
+ #nav_container{
+  scrollbar-color: #5D87FF #F5F5F5; /* Color de la barra y el fondo de la pista */
+}
+
+ #nav_container::-webkit-scrollbar-track {
+  background-color: #F5F5F5; /* Color de fondo de la pista */
+}
+
+ #nav_container::-webkit-scrollbar-thumb {
+  background-color: #5D87FF; /* Color de la barra de desplazamiento */
+}
+
+/*Base*/
+
+ #base {
+  background-color: #fff;
+  scrollbar-color: #5D87FF #F5F5F5;
+  box-shadow: 0 0px 20px rgba(42, 47, 61, 0.1);
+}
+
+ h5.num, p.cont{
+  color: #ffffff;
+}
+
+ #base::-webkit-scrollbar-track {
+  background-color: #F5F5F5; /* Color de fondo de la pista */
+}
+
+ #base::-webkit-scrollbar-thumb {
+  background-color: #5D87FF; /* Color de la barra de desplazamiento */
+}
+
+/* Card */
+
+ .card-container {
+  color: #2A2F3D;
+}
+
+ .card-footer a{
+  color: #2A2F3D;
+}
+
+/* Tabla */
+
+ .input-group .custom-input:focus, #show-select:focus {
+  border-color: #5D87FF;
+}
+
+ .input-group .input-group-text {
+  color: #fff;
+  background-color: #5D87FF;
+}
+
+ ul.pagination li a{
+  color: #2A2F3D;
+}
+
+ ul.pagination li a:hover, .input-group .custom-button:hover{
+  color: #fff;
+  background-color: #5D87FF;
+}
+
+ button.btn-primary {
+  border-color: #2A2F3D;
+  background-color: #fff;
+  color: #2A2F3D;
+}
+
+ button.btn-primary:hover{
+  border-color: #5D87FF;
+  background-color: #5D87FF;
   color: #fff;
 }
 
-/* Estilos para el modo claro */
-body.light-mode {
-  background-color: #ffffff;
-  color: #333;
+ i.bi-pencil-square,  i.bi-trash{
+  color: #2A2F3D;
 }
 
-#btnChange{
+/* submenu de imagenes */
+
+ .submenu{
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Formularios */
+
+ .input-group .label-custom{
+  color: #fff;
+  background-color: #5D87FF;
+}
+
+ input.custom-input:focus,  select.custom-input:focus, 
+ textarea.custom-input:focus{
+  border-color: #5D87FF;
+}
+
+ select.custom-input option::-moz-selection {
+  background-color: #5D87FF;
+}
+
+ select.custom-input option::selection {
+  background-color: #5D87FF;
+}
+
+/* Footer */
+
+ #boton:active {
+  border-color: #5D87FF;
+  background-color: #5D87FF;
+}
+
+ #footer{
+  background-color: #fff;
+  color: #2A2F3D;
+  box-shadow: 0 20px 20px rgba(42, 47, 61, 0.1);
+}
+
+ #btnChange{
   border-color: none;
   background-color: none;
   width: auto;
   height: auto;
 }
-#btnChange:hover{
-  background-color: #fff;
+
+ #btnChange:hover{
+  color: none;
 }
-#modeIcon{
-  color: #333;
+
+ #modeIcon{
+  color: #2A2F3D;
+}
+
+.light #modeIcon:hover{
+  color: #5D87FF;
 }
